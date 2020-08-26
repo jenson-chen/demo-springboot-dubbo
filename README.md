@@ -1,0 +1,4 @@
+# demo-springboot-dubbo
+Dubbo与SpringBoot的简单整合(无数据库)
+
+该Demo是本人在学习Dubbo过程中的点滴，Dubbo与SpringBoot的简单整合，该Demo中不包含对数据库的操作，仅从前端发起一个get请求，然后通过RPC调用返回url中的参数
