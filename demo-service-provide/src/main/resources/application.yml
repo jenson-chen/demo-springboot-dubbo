@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  dubbo:
+    application:
+      name: service-provider
+    base-package: com.lsnu.service # dubbo\u670D\u52A1\u53D1\u5E03\u8005\u6240\u5728\u7684\u5305
+    registry:
+      address: 127.0.0.1 # zookeeper\u6CE8\u518C\u4E2D\u5FC3\u7684\u5730\u5740
+      port: 2181       # zookeeper\u6CE8\u518C\u4E2D\u5FC3\u7684\u7AEF\u53E3
+      protocol: zookeeper
+      register: true
+    protocol:
+      name: dubbo
+      port: 20880
+      accesslog: true
+    provider:
+      retries: 1
+      delay: -1
