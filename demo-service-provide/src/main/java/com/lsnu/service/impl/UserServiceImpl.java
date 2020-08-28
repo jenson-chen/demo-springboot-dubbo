@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
  * @author Jenson
  * @since 2020/8/26 16:32
  **/
+@Component
 @Service(interfaceClass = UserService.class)
 public class UserServiceImpl implements UserService{
 
